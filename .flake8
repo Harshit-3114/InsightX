@@ -1,0 +1,18 @@
+[flake8]
+max-line-length = 127
+max-complexity = 10
+extend-exclude =
+    .git,
+    __pycache__,
+    venv,
+    .venv,
+    env,
+    build,
+    dist,
+    .pytest_cache
+per-file-ignores =
+    tests/*:E402
+    # `_process_query` is a Streamlit UI handler: it dispatches between the
+    # cache, the rate limiter, the LLM and the error paths, and splitting it
+    # would only spread the branching across more functions.
+    app.py:C901

@@ -1,7 +1,6 @@
 import logging
 import re
 import time
-from typing import Optional
 
 from openai import OpenAI
 
@@ -42,7 +41,8 @@ BUSINESS RULES:
 3. Always use exact string matches like 'Android', 'FAILED'
 
 CONVERSATION CONTEXT:
-- If the user asks a follow-up question (e.g., "What about iOS?"), use the conversation history above to understand what they are referring to.
+- If the user asks a follow-up question (e.g., "What about iOS?"), use the conversation history above
+  to understand what they are referring to.
 - If the user asks multiple distinct questions in one message, generate a separate SQL query for each one.
 
 MULTI-QUERY FORMAT (if needed):

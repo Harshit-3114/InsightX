@@ -187,7 +187,7 @@ def _format_dataframe(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def _build_conversation_context() -> str:
-    turns = st.session_state.conversation[-config.max_conversation_turns :]
+    turns = st.session_state.conversation[-config.max_conversation_turns:]
     lines = []
     for t in turns:
         lines.append(f"User: {t['q']}")

@@ -1,7 +1,6 @@
 import logging
 import re
 import sqlite3
-from typing import Any, Optional
 
 from text_to_sql_engine import (
     extract_sql,
