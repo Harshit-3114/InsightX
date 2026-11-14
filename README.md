@@ -5,7 +5,7 @@ AI-powered Text-to-SQL engine for digital payment transaction analysis. Ask ques
 ## Features
 
 - **Natural Language Querying** — Ask questions like *"What is the failure rate for Android users on weekends?"* and get instant answers.
-- **Two-Pass AI Architecture** — Gemini generates SQL → executes against real DB → second pass produces insights *strictly* from returned data, preventing hallucination.
+- **Two-Pass AI Architecture** — The NVIDIA NIM model generates SQL → executes against real DB → second pass produces insights *strictly* from returned data, preventing hallucination.
 - **Structured Business Insights** — Every response includes Direct Response, Supporting Statistics, Contextual Insights, and a Recommendation.
 - **Smart Formatting** — Monetary values auto-formatted to Indian Rupees (₹) across UI and AI responses.
 - **Query History** — Sidebar tracks recent queries with generated SQL for reference.
